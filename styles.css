@@ -1,11 +1,13 @@
 .container {
+    background-color: lightblue;
 display: flex;
 border: solid 3px black;
+margin: 150px;
 height: 40vh;
 width: 40vh;
-flex-wrap: wrap-reverse;
-flex-direction: column;
 justify-content: center;
+z-index: -1;
+
 }
 
 #Lily {
@@ -13,28 +15,48 @@ justify-content: center;
     flex-wrap: wrap-reverse;
     flex-direction: column; 
     justify-content: center; 
+    z-index: 1;
     position: absolute;
-    
+}
+
+.greenLily {
+  display: flex; 
+  margin-left: 400px;
+}
+
+.yellowLily {
+    display: flex;
+    margin-top: -220px;
+    /* margin-right: -100px; */
+}
+
+.redLily {
+    display: flex;
+    margin-left: 400px;
+}
+
+#Frogs {
+display: flex;
+flex-wrap: wrap-reverse;
+justify-content: center;
+flex-direction: column;
+z-index: 2;
+position: absolute;
 }
 
 .frogGreen {
-display: flex;
-justify-content: flex-end;
-flex-direction: column;
-/* position: absolute; */
-z-index: 1;
+    display: flex;
+    margin-left: 400px;
 }
 
 .frogRed {
     display: flex;
-    justify-content: flex-end;
-    /* position: absolute; */
-    z-index: 1;
+    margin-left: 400px;
 }
 
 .frogYellow {
-    display: flex;
-   /* position: absolute; */
-    z-index: 1;
-    margin-top: 25px;
-}
+display: flex;
+margin-top: -220px;
+/* margin-right: -100px; */
+} 
+
